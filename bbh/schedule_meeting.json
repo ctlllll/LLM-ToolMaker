@@ -1,0 +1,1004 @@
+{
+    "examples": [
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 09:00 - 09:30, 10:30 - 13:00, 13:30 - 14:00, 14:30 - 16:00, 16:30 - 17:00, 17:30 - 18:00\nB's availability: 08:30 - 12:00, 12:30 - 13:00, 13:30 - 15:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:30 - 12:00"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 09:00, 09:30 - 10:00, 10:30 - 11:00, 12:30 - 13:00, 15:30 - 16:30, 17:30 - 18:00\nB's availability: 08:00 - 09:30, 10:00 - 10:30, 11:30 - 12:00, 14:00 - 14:30, 15:30 - 16:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 09:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 12:30, 13:30 - 14:00, 15:00 - 16:00, 16:30 - 18:00\nB's availability: 08:30 - 09:30, 10:00 - 10:30, 11:00 - 12:00, 12:30 - 13:00, 14:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 09:00, 09:30 - 12:00, 13:30 - 14:00, 15:30 - 16:00, 17:30 - 18:00\nB's availability: 08:30 - 10:30, 11:00 - 14:00, 14:30 - 15:00, 15:30 - 16:00, 16:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 09:00, 09:30 - 11:00, 11:30 - 12:00, 12:30 - 13:30, 14:00 - 14:30, 15:30 - 16:00, 16:30 - 17:00\nB's availability: 09:00 - 09:30, 11:30 - 12:00, 13:30 - 14:30, 16:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 12:00 - 12:30, 13:00 - 13:30, 14:30 - 15:30, 17:30 - 18:00\nB's availability: 09:00 - 11:00, 12:00 - 12:30, 13:00 - 13:30, 15:30 - 16:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 09:00, 10:00 - 10:30, 11:00 - 13:00, 13:30 - 15:30, 16:30 - 17:30\nB's availability: 08:00 - 09:30, 10:00 - 10:30, 11:00 - 11:30, 12:00 - 14:30, 15:00 - 16:00, 16:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "12:00 - 13:00"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:30 - 10:00, 10:30 - 11:30, 12:30 - 13:00, 13:30 - 14:00, 14:30 - 15:00, 15:30 - 16:00, 16:30 - 17:30\nB's availability: 08:30 - 09:00, 12:00 - 12:30, 14:00 - 14:30, 16:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "16:30 - 17:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:30 - 12:00, 12:30 - 13:30, 14:00 - 14:30, 15:00 - 18:00\nB's availability: 08:00 - 08:30, 09:30 - 10:00, 10:30 - 11:00, 11:30 - 12:00, 13:00 - 15:00, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 09:00, 09:30 - 11:30, 13:00 - 16:30, 17:00 - 17:30\nB's availability: 08:30 - 09:00, 10:00 - 11:00, 12:00 - 13:00, 13:30 - 14:00, 15:00 - 15:30, 16:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:00 - 11:00"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 09:00, 09:30 - 10:00, 10:30 - 11:30, 12:00 - 12:30, 13:30 - 14:00, 14:30 - 15:00, 15:30 - 16:00, 17:00 - 18:00\nB's availability: 09:30 - 11:30, 12:00 - 13:00, 13:30 - 15:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:30 - 11:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 11:00, 11:30 - 12:00, 12:30 - 13:00, 13:30 - 16:00, 16:30 - 17:00, 17:30 - 18:00\nB's availability: 08:30 - 09:30, 11:00 - 12:30, 13:00 - 14:00, 14:30 - 16:00, 16:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:00 - 09:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 09:30, 10:30 - 13:00, 13:30 - 14:00, 14:30 - 18:00\nB's availability: 08:00 - 08:30, 09:00 - 09:30, 10:00 - 11:30, 12:30 - 13:30, 14:30 - 15:00, 15:30 - 16:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:00 - 09:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 09:30, 10:30 - 11:30, 13:00 - 13:30, 14:30 - 15:30, 16:30 - 18:00\nB's availability: 08:00 - 08:30, 10:00 - 10:30, 12:00 - 12:30, 13:00 - 13:30, 14:00 - 15:00, 15:30 - 16:00, 16:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 09:00, 12:00 - 13:00, 14:30 - 15:30, 16:30 - 17:00, 17:30 - 18:00\nB's availability: 08:00 - 08:30, 11:00 - 12:00, 14:00 - 14:30, 15:00 - 15:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 09:30 - 10:00, 10:30 - 11:30, 12:00 - 12:30, 13:30 - 14:30, 16:30 - 17:30\nB's availability: 08:30 - 09:00, 10:30 - 11:00, 13:30 - 14:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "13:30 - 14:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 10:00, 11:00 - 11:30, 16:00 - 17:00\nB's availability: 08:00 - 08:30, 09:00 - 11:30, 12:30 - 13:30, 15:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:00 - 10:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 09:30 - 10:00, 10:30 - 11:00, 14:00 - 14:30, 15:00 - 15:30, 16:30 - 17:30\nB's availability: 08:00 - 09:00, 10:30 - 12:00, 12:30 - 13:00, 14:00 - 16:00, 16:30 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 11:00, 12:00 - 12:30, 14:30 - 16:00, 17:00 - 17:30\nB's availability: 08:00 - 09:30, 10:00 - 13:00, 13:30 - 15:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 09:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 10:00, 10:30 - 11:00, 12:00 - 12:30, 13:00 - 13:30, 14:00 - 17:00, 17:30 - 18:00\nB's availability: 09:00 - 09:30, 11:00 - 11:30, 12:30 - 13:30, 14:30 - 15:00, 15:30 - 16:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "15:30 - 16:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 11:00, 12:30 - 14:00, 14:30 - 16:30, 17:00 - 18:00\nB's availability: 08:00 - 08:30, 09:00 - 09:30, 10:00 - 10:30, 11:00 - 11:30, 12:00 - 12:30, 13:30 - 14:00, 14:30 - 15:00, 16:00 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 10:30 - 11:30, 12:00 - 12:30, 16:00 - 17:00, 17:30 - 18:00\nB's availability: 08:00 - 08:30, 09:00 - 10:30, 12:00 - 13:00, 13:30 - 15:30, 16:00 - 16:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 11:00, 12:00 - 13:00, 13:30 - 14:00, 15:00 - 16:00, 16:30 - 18:00\nB's availability: 08:30 - 09:00, 09:30 - 10:30, 11:00 - 15:00, 16:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 09:30 - 10:00, 10:30 - 11:00, 12:30 - 14:00\nB's availability: 09:00 - 10:00, 10:30 - 11:30, 12:00 - 13:00, 14:00 - 14:30, 15:00 - 16:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:30 - 10:00"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 09:30, 10:00 - 10:30, 11:00 - 12:00, 12:30 - 16:30, 17:30 - 18:00\nB's availability: 08:00 - 09:00, 10:30 - 11:30, 14:30 - 15:00, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 09:00, 11:00 - 11:30, 12:00 - 12:30, 13:00 - 13:30, 14:00 - 16:00, 16:30 - 18:00\nB's availability: 09:30 - 10:00, 10:30 - 12:30, 13:30 - 14:00, 15:30 - 16:00, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "11:00 - 11:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 09:00, 10:00 - 11:00, 11:30 - 12:30, 14:00 - 15:30, 17:00 - 17:30\nB's availability: 08:00 - 08:30, 09:30 - 11:30, 12:00 - 12:30, 13:30 - 15:30, 16:00 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:00 - 11:00"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 09:00, 10:00 - 11:30, 12:00 - 13:30, 14:30 - 15:00, 16:00 - 16:30\nB's availability: 09:00 - 10:00, 10:30 - 11:00, 14:30 - 15:00, 15:30 - 16:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:30 - 10:00, 11:00 - 13:00, 13:30 - 14:30, 15:00 - 15:30, 16:00 - 17:00, 17:30 - 18:00\nB's availability: 08:00 - 11:30, 12:00 - 13:00, 14:00 - 15:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 09:00, 09:30 - 10:30, 11:30 - 12:00, 12:30 - 13:00, 15:00 - 15:30\nB's availability: 08:00 - 08:30, 09:00 - 09:30, 10:30 - 11:00, 11:30 - 13:30, 14:30 - 16:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 09:30, 10:00 - 11:30, 12:00 - 12:30, 13:00 - 13:30, 14:00 - 14:30\nB's availability: 08:00 - 08:30, 09:30 - 11:00, 12:30 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:00 - 11:00"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 09:00, 10:00 - 10:30, 11:30 - 12:00, 12:30 - 14:00, 14:30 - 18:00\nB's availability: 08:00 - 09:30, 10:00 - 11:00, 12:00 - 13:00, 13:30 - 16:00, 16:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "14:30 - 15:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 11:00 - 11:30, 12:30 - 13:00, 14:30 - 15:30, 16:30 - 17:00\nB's availability: 09:00 - 09:30, 12:00 - 12:30, 14:00 - 15:00, 16:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "14:30 - 15:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 09:00, 09:30 - 10:00, 10:30 - 11:30, 12:00 - 17:00\nB's availability: 08:30 - 09:30, 10:00 - 10:30, 11:00 - 11:30, 13:00 - 13:30, 14:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "14:00 - 15:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 10:00, 10:30 - 12:30, 13:30 - 15:00, 15:30 - 17:00, 17:30 - 18:00\nB's availability: 10:00 - 10:30, 11:00 - 11:30, 14:00 - 15:30, 16:00 - 16:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 10:00 - 10:30, 13:30 - 14:30, 16:00 - 16:30, 17:00 - 17:30\nB's availability: 08:00 - 09:30, 10:00 - 10:30, 11:30 - 13:00, 13:30 - 14:00, 14:30 - 15:00, 16:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 10:30, 12:00 - 13:30, 14:00 - 18:00\nB's availability: 09:00 - 10:00, 10:30 - 11:00, 11:30 - 12:30, 13:00 - 13:30, 14:30 - 15:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 09:00 - 09:30, 10:00 - 11:00, 12:00 - 12:30, 13:00 - 14:30, 15:00 - 16:00, 17:00 - 17:30\nB's availability: 09:00 - 12:00, 12:30 - 13:00, 13:30 - 15:00, 15:30 - 16:00, 16:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 09:00 - 09:30, 10:00 - 11:00, 11:30 - 12:30, 13:00 - 13:30, 15:30 - 16:30\nB's availability: 09:30 - 10:30, 11:00 - 11:30, 12:00 - 12:30, 13:30 - 14:00, 16:00 - 16:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 09:30, 10:00 - 10:30, 11:00 - 12:00, 13:30 - 14:00, 14:30 - 16:00, 17:30 - 18:00\nB's availability: 09:00 - 09:30, 11:30 - 12:00, 14:00 - 14:30, 15:00 - 15:30, 16:00 - 16:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:00 - 09:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 10:00, 10:30 - 11:30, 13:00 - 14:00, 14:30 - 16:30, 17:00 - 18:00\nB's availability: 08:30 - 09:00, 11:00 - 11:30, 13:00 - 13:30, 14:00 - 14:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "17:00 - 18:00"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 09:00, 09:30 - 11:00, 11:30 - 12:00, 12:30 - 13:00, 13:30 - 15:30, 17:00 - 18:00\nB's availability: 09:30 - 10:30, 11:30 - 13:30, 14:00 - 15:00, 15:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:30 - 10:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 09:00 - 09:30, 10:00 - 11:30, 13:30 - 14:00, 14:30 - 16:00, 16:30 - 17:30\nB's availability: 08:00 - 08:30, 09:30 - 10:00, 11:00 - 13:00, 14:30 - 16:00, 16:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "14:30 - 16:00"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 10:30, 11:00 - 11:30, 12:30 - 16:00\nB's availability: 08:00 - 08:30, 09:00 - 10:00, 11:00 - 13:00, 13:30 - 15:00, 16:00 - 16:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 12:00 - 12:30, 13:30 - 14:00, 15:30 - 16:30, 17:30 - 18:00\nB's availability: 09:00 - 09:30, 10:00 - 10:30, 11:00 - 11:30, 12:30 - 15:00, 15:30 - 16:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "15:30 - 16:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 09:00 - 09:30, 11:00 - 11:30, 12:00 - 12:30, 13:00 - 16:30\nB's availability: 08:00 - 08:30, 14:30 - 15:30, 16:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 09:00, 09:30 - 11:00, 11:30 - 13:30, 14:00 - 15:00, 16:00 - 16:30, 17:30 - 18:00\nB's availability: 08:30 - 09:30, 10:00 - 12:00, 12:30 - 15:00, 15:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:00 - 11:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 11:30, 12:00 - 13:00, 13:30 - 16:00, 17:30 - 18:00\nB's availability: 09:00 - 10:00, 10:30 - 11:00, 12:00 - 13:00, 13:30 - 15:30, 16:00 - 16:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "13:30 - 15:00"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 09:00, 10:00 - 10:30, 12:30 - 13:30, 14:00 - 14:30, 16:30 - 17:00\nB's availability: 08:00 - 08:30, 09:30 - 10:30, 11:30 - 12:00, 12:30 - 14:00, 14:30 - 15:30, 16:00 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "12:30 - 13:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 10:00 - 10:30, 11:30 - 12:30, 15:30 - 16:00, 16:30 - 17:00, 17:30 - 18:00\nB's availability: 08:00 - 08:30, 11:30 - 12:00, 12:30 - 13:00, 13:30 - 14:00, 14:30 - 15:00, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 09:00, 09:30 - 10:00, 10:30 - 11:30, 12:30 - 13:00, 13:30 - 14:30, 15:00 - 16:00, 17:00 - 17:30\nB's availability: 08:30 - 09:30, 10:00 - 10:30, 11:30 - 13:00, 13:30 - 16:00, 16:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 09:00, 10:30 - 12:30, 13:00 - 17:00, 17:30 - 18:00\nB's availability: 10:00 - 10:30, 11:00 - 11:30, 12:00 - 12:30, 14:00 - 14:30, 15:30 - 16:00, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 11:00, 11:30 - 12:00, 12:30 - 13:00, 14:30 - 16:30, 17:00 - 17:30\nB's availability: 08:00 - 08:30, 10:00 - 11:30, 14:30 - 15:00, 16:00 - 16:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:00 - 11:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 09:00, 09:30 - 11:00, 11:30 - 12:00, 13:00 - 13:30, 14:30 - 15:00, 15:30 - 16:30, 17:00 - 18:00\nB's availability: 09:00 - 10:30, 11:00 - 11:30, 12:00 - 13:00, 14:00 - 14:30, 15:30 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 10:30, 11:30 - 12:00, 12:30 - 13:00, 13:30 - 14:00, 15:30 - 16:00, 16:30 - 17:00\nB's availability: 08:00 - 08:30, 09:00 - 09:30, 11:30 - 13:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 09:30 - 11:00, 13:30 - 15:30, 16:00 - 16:30\nB's availability: 08:00 - 09:00, 10:00 - 10:30, 11:30 - 12:30, 13:00 - 13:30, 14:00 - 14:30, 15:30 - 16:00, 16:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:00 - 10:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 09:00, 09:30 - 14:00, 14:30 - 15:00, 16:30 - 17:30\nB's availability: 09:00 - 10:30, 14:00 - 15:30, 16:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 09:30, 12:30 - 13:00, 14:30 - 16:30\nB's availability: 08:30 - 10:00, 10:30 - 11:00, 11:30 - 13:00, 13:30 - 16:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 09:00"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 09:00, 12:30 - 14:00, 14:30 - 16:00, 16:30 - 18:00\nB's availability: 09:00 - 10:30, 11:00 - 12:30, 13:00 - 14:30, 15:30 - 16:00, 16:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "13:00 - 13:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 10:00, 10:30 - 11:00, 11:30 - 13:30, 14:00 - 15:00, 15:30 - 16:30, 17:00 - 18:00\nB's availability: 08:00 - 08:30, 09:00 - 09:30, 10:00 - 11:00, 12:00 - 16:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "12:00 - 13:00"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 08:30, 11:00 - 12:00, 13:00 - 14:00, 14:30 - 15:30, 17:00 - 17:30\nB's availability: 08:00 - 09:30, 11:00 - 12:00, 12:30 - 13:30, 15:00 - 15:30, 16:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "11:00 - 12:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 09:30, 11:00 - 12:30, 13:00 - 13:30, 14:00 - 16:30\nB's availability: 08:30 - 10:00, 10:30 - 12:30, 14:00 - 15:00, 16:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "11:00 - 12:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 10:30 - 11:00, 14:00 - 15:00, 16:00 - 17:00\nB's availability: 08:00 - 09:30, 10:00 - 11:00, 11:30 - 12:00, 13:30 - 14:30, 15:00 - 16:00, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:30 - 11:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 09:30 - 10:00, 10:30 - 11:00, 12:00 - 12:30, 16:30 - 17:30\nB's availability: 09:00 - 11:30, 12:00 - 12:30, 14:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 09:00, 09:30 - 11:30, 12:00 - 12:30, 13:00 - 15:00, 15:30 - 17:30\nB's availability: 08:00 - 08:30, 09:30 - 10:30, 11:00 - 11:30, 12:00 - 12:30, 13:00 - 14:30, 15:00 - 16:00, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:30 - 10:00, 14:00 - 15:30, 16:00 - 18:00\nB's availability: 09:00 - 10:30, 12:00 - 13:30, 14:00 - 15:00, 16:00 - 16:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 09:30 - 11:00, 11:30 - 13:30, 14:30 - 15:00, 15:30 - 16:30\nB's availability: 08:00 - 08:30, 11:00 - 11:30, 13:30 - 14:00, 15:30 - 16:00, 16:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 10:30, 11:30 - 12:30, 15:00 - 16:30, 17:30 - 18:00\nB's availability: 09:00 - 10:00, 10:30 - 11:00, 11:30 - 14:30, 15:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 09:00, 09:30 - 12:30, 13:30 - 17:00, 17:30 - 18:00\nB's availability: 09:30 - 10:00, 11:00 - 11:30, 13:30 - 14:00, 14:30 - 15:00, 16:00 - 16:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:30 - 10:00"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 09:00 - 11:30, 12:30 - 13:30, 14:00 - 14:30, 15:00 - 15:30, 16:00 - 18:00\nB's availability: 08:00 - 08:30, 12:30 - 13:00, 13:30 - 15:00, 16:00 - 16:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 09:30, 10:00 - 13:00, 13:30 - 16:00, 16:30 - 17:30\nB's availability: 08:00 - 10:00, 10:30 - 11:00, 11:30 - 13:30, 14:30 - 16:00, 16:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 09:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 09:00 - 09:30, 10:30 - 11:00, 15:00 - 16:30, 17:00 - 18:00\nB's availability: 08:00 - 08:30, 09:00 - 09:30, 13:30 - 15:00, 16:00 - 16:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:00 - 09:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 10:00, 11:30 - 12:30, 13:00 - 14:30, 15:00 - 16:00, 16:30 - 18:00\nB's availability: 10:00 - 11:00, 12:00 - 12:30, 13:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "13:00 - 14:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 09:30, 10:00 - 10:30, 12:30 - 14:00, 16:00 - 16:30\nB's availability: 08:30 - 09:30, 10:00 - 10:30, 11:00 - 12:30, 13:30 - 14:00, 15:00 - 16:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 09:00 - 10:00, 10:30 - 11:30, 13:00 - 13:30, 14:00 - 15:00, 17:00 - 18:00\nB's availability: 08:00 - 08:30, 09:00 - 09:30, 10:00 - 14:00, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 10:30, 11:00 - 12:00, 12:30 - 13:30, 14:00 - 15:00, 15:30 - 16:00, 16:30 - 17:30\nB's availability: 08:30 - 09:30, 10:00 - 10:30, 11:00 - 11:30, 12:00 - 12:30, 13:30 - 14:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 09:30, 10:30 - 11:00, 11:30 - 12:00, 12:30 - 13:00, 13:30 - 14:00, 14:30 - 15:30, 16:00 - 16:30, 17:00 - 17:30\nB's availability: 08:00 - 08:30, 09:00 - 11:00, 12:00 - 12:30, 13:30 - 14:00, 15:00 - 15:30, 16:00 - 16:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 08:30, 10:30 - 11:00, 11:30 - 12:00, 12:30 - 13:00, 13:30 - 14:00, 15:00 - 15:30, 17:30 - 18:00\nB's availability: 08:30 - 11:00, 11:30 - 12:00, 13:00 - 16:00, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 09:00, 09:30 - 11:30, 12:00 - 13:00, 14:00 - 14:30, 15:00 - 15:30, 17:30 - 18:00\nB's availability: 08:00 - 09:30, 10:30 - 12:30, 13:30 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 09:00, 09:30 - 10:00, 10:30 - 11:00, 12:00 - 12:30, 13:00 - 13:30, 14:30 - 16:30, 17:00 - 18:00\nB's availability: 08:30 - 10:00, 11:00 - 16:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "14:30 - 16:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 09:00 - 10:00, 10:30 - 11:30, 12:00 - 13:00, 15:00 - 15:30\nB's availability: 08:00 - 09:00, 09:30 - 10:00, 10:30 - 11:30, 12:00 - 13:00, 13:30 - 14:00, 14:30 - 15:00, 16:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 10:00 - 12:00, 16:00 - 16:30\nB's availability: 08:00 - 10:30, 11:30 - 12:00, 12:30 - 13:00, 13:30 - 14:00, 14:30 - 16:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 10:30, 11:00 - 11:30, 12:30 - 13:00, 14:30 - 15:00, 17:30 - 18:00\nB's availability: 08:00 - 08:30, 09:00 - 11:30, 12:00 - 13:30, 14:00 - 14:30, 16:00 - 16:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:00 - 10:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 08:30, 09:30 - 10:00, 10:30 - 11:00, 12:30 - 13:00, 13:30 - 14:00, 16:30 - 17:00\nB's availability: 08:00 - 09:00, 09:30 - 10:00, 10:30 - 11:00, 12:00 - 12:30, 13:00 - 14:00, 16:00 - 16:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 11:30, 12:00 - 12:30, 13:30 - 14:00, 14:30 - 15:00, 15:30 - 18:00\nB's availability: 08:00 - 08:30, 09:30 - 10:00, 11:00 - 12:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 09:30, 10:00 - 12:00, 12:30 - 13:00, 13:30 - 15:00, 15:30 - 16:00\nB's availability: 08:30 - 09:00, 09:30 - 10:00, 10:30 - 11:30, 13:00 - 13:30, 14:00 - 14:30, 15:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:30 - 11:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 10:30, 11:00 - 14:00, 14:30 - 15:00, 15:30 - 16:00, 16:30 - 17:00, 17:30 - 18:00\nB's availability: 08:00 - 09:30, 11:00 - 12:00, 13:00 - 14:30, 15:00 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 09:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 09:30, 10:00 - 11:00, 12:30 - 13:00, 14:00 - 14:30, 16:30 - 18:00\nB's availability: 08:00 - 08:30, 09:00 - 09:30, 10:00 - 11:00, 12:00 - 13:30, 14:00 - 14:30, 16:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 10:30, 11:00 - 12:00, 12:30 - 13:30, 14:00 - 14:30, 15:00 - 16:30\nB's availability: 08:30 - 09:00, 10:30 - 11:00, 11:30 - 12:00, 14:00 - 14:30, 15:00 - 15:30, 16:00 - 16:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 10:00, 10:30 - 11:30, 13:30 - 15:00, 15:30 - 16:00, 16:30 - 17:30\nB's availability: 08:00 - 08:30, 09:00 - 09:30, 10:00 - 10:30, 11:00 - 11:30, 12:30 - 13:00, 13:30 - 14:00, 16:00 - 16:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 09:00, 10:30 - 14:30, 16:30 - 18:00\nB's availability: 09:30 - 12:00, 13:00 - 14:30, 15:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:30 - 11:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 09:00 - 10:30, 11:00 - 13:00, 13:30 - 14:00, 15:00 - 15:30, 16:30 - 17:00\nB's availability: 09:00 - 11:30, 12:00 - 13:00, 14:00 - 16:00, 16:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:00 - 10:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 09:00 - 09:30, 10:00 - 10:30, 11:00 - 12:00, 12:30 - 13:30, 14:00 - 14:30, 15:30 - 16:00, 17:30 - 18:00\nB's availability: 10:30 - 12:00, 12:30 - 13:00, 14:30 - 15:00, 16:00 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 09:00, 09:30 - 10:00, 10:30 - 11:00, 11:30 - 13:30, 15:00 - 15:30, 16:00 - 16:30, 17:30 - 18:00\nB's availability: 08:00 - 09:30, 12:00 - 13:00, 14:00 - 14:30, 16:00 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 09:30, 10:30 - 15:30, 16:30 - 17:00\nB's availability: 08:30 - 09:00, 09:30 - 10:30, 11:30 - 12:00, 13:00 - 13:30, 14:30 - 15:00, 15:30 - 16:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "11:30 - 12:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 09:30, 10:00 - 10:30, 11:00 - 11:30, 12:00 - 13:30, 15:00 - 15:30, 17:30 - 18:00\nB's availability: 08:30 - 09:00, 10:00 - 11:00, 11:30 - 12:30, 13:30 - 14:00, 16:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 09:00, 11:30 - 12:00, 12:30 - 13:00, 13:30 - 14:30, 15:00 - 16:00, 17:30 - 18:00\nB's availability: 08:00 - 08:30, 11:30 - 12:30, 13:00 - 13:30, 14:30 - 15:00, 16:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 10:00, 10:30 - 11:00, 12:00 - 14:00, 16:00 - 16:30, 17:00 - 18:00\nB's availability: 09:00 - 09:30, 10:00 - 15:00, 15:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "12:00 - 13:00"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 09:00, 10:00 - 11:30, 12:00 - 12:30, 13:30 - 14:00, 15:00 - 16:00, 16:30 - 18:00\nB's availability: 08:30 - 12:00, 12:30 - 13:30, 15:00 - 16:00, 16:30 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 09:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 09:00, 09:30 - 10:00, 11:00 - 11:30, 12:30 - 13:30, 14:30 - 18:00\nB's availability: 08:30 - 09:30, 12:30 - 13:00, 14:30 - 15:00, 16:00 - 16:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 09:30, 10:00 - 10:30, 11:00 - 12:00, 13:30 - 14:00, 15:30 - 16:00, 17:30 - 18:00\nB's availability: 09:00 - 09:30, 10:30 - 11:00, 11:30 - 12:30, 13:30 - 14:00, 15:00 - 15:30, 16:00 - 16:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 09:00, 09:30 - 10:00, 10:30 - 11:00, 11:30 - 12:30, 13:30 - 14:00, 15:30 - 16:30, 17:30 - 18:00\nB's availability: 08:30 - 12:00, 13:00 - 16:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 09:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 10:30 - 11:00, 12:30 - 13:00, 13:30 - 14:30, 16:00 - 18:00\nB's availability: 08:00 - 09:00, 09:30 - 11:30, 12:00 - 13:30, 14:30 - 15:30, 16:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "16:30 - 18:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 09:30, 10:00 - 12:30, 13:30 - 14:00, 14:30 - 15:00, 16:00 - 16:30, 17:00 - 18:00\nB's availability: 08:00 - 11:00, 11:30 - 12:00, 12:30 - 13:30, 14:00 - 16:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 11:00, 11:30 - 14:30, 15:00 - 15:30, 16:00 - 17:30\nB's availability: 08:00 - 08:30, 09:00 - 10:30, 11:30 - 13:30, 14:00 - 16:00, 16:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:00 - 10:00"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 09:00 - 12:00, 12:30 - 13:30, 14:00 - 16:30, 17:00 - 18:00\nB's availability: 08:30 - 09:30, 12:00 - 14:00, 16:30 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:00 - 09:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 09:00, 09:30 - 10:00, 11:00 - 11:30, 12:30 - 14:30, 15:00 - 15:30, 16:00 - 16:30\nB's availability: 08:30 - 09:30, 11:00 - 12:00, 12:30 - 14:30, 15:00 - 16:00, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "12:30 - 13:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:30 - 10:30, 11:00 - 12:00, 13:30 - 14:30, 16:30 - 17:30\nB's availability: 08:00 - 09:30, 10:30 - 13:00, 14:00 - 15:00, 16:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 10:30 - 11:30, 14:00 - 14:30, 15:30 - 16:30, 17:00 - 17:30\nB's availability: 08:00 - 09:00, 10:00 - 11:00, 11:30 - 12:00, 12:30 - 13:00, 13:30 - 14:00, 15:00 - 16:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:30 - 12:30, 13:00 - 14:30, 15:00 - 15:30, 16:00 - 16:30\nB's availability: 08:00 - 08:30, 10:00 - 11:30, 12:00 - 12:30, 14:00 - 14:30, 16:00 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:00 - 11:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 10:00, 10:30 - 12:00, 12:30 - 13:00, 13:30 - 14:00, 14:30 - 17:30\nB's availability: 08:30 - 09:00, 11:30 - 12:30, 14:00 - 14:30, 15:00 - 15:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 09:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 10:00, 11:00 - 13:30, 15:00 - 16:00, 16:30 - 18:00\nB's availability: 08:30 - 09:00, 09:30 - 10:00, 12:00 - 12:30, 15:00 - 15:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 10:00 - 11:00, 11:30 - 12:00, 13:00 - 14:00\nB's availability: 08:00 - 08:30, 10:00 - 10:30, 11:30 - 12:30, 14:00 - 14:30, 15:00 - 16:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:00 - 10:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 10:00, 11:30 - 12:00, 12:30 - 13:00, 14:00 - 18:00\nB's availability: 08:00 - 08:30, 09:00 - 10:30, 13:00 - 14:00, 14:30 - 15:30, 16:00 - 16:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:00 - 10:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 09:00, 10:00 - 12:30, 14:30 - 16:00, 16:30 - 18:00\nB's availability: 09:00 - 10:00, 10:30 - 11:00, 11:30 - 13:30, 14:30 - 15:00, 15:30 - 16:00, 16:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "16:30 - 18:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 10:00, 10:30 - 12:30, 13:30 - 15:00, 15:30 - 18:00\nB's availability: 10:00 - 11:00, 12:00 - 12:30, 15:30 - 16:00, 16:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 09:00, 10:30 - 11:00, 13:00 - 13:30, 14:00 - 14:30, 16:00 - 16:30, 17:00 - 17:30\nB's availability: 10:00 - 10:30, 14:30 - 15:30, 16:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 08:30, 12:00 - 14:00, 15:30 - 17:00, 17:30 - 18:00\nB's availability: 09:30 - 10:00, 12:00 - 13:00, 14:30 - 15:30, 16:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 11:00, 11:30 - 12:00, 12:30 - 13:00, 13:30 - 14:30, 15:30 - 18:00\nB's availability: 09:00 - 12:00, 12:30 - 13:00, 14:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:00 - 10:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 09:00, 10:00 - 10:30, 11:00 - 12:30, 13:00 - 15:30, 17:30 - 18:00\nB's availability: 09:00 - 09:30, 10:30 - 11:00, 11:30 - 14:30, 15:00 - 15:30, 16:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "13:00 - 14:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 09:00, 09:30 - 10:00, 11:30 - 13:00, 14:30 - 15:00\nB's availability: 08:30 - 10:30, 11:00 - 11:30, 13:00 - 14:00, 16:30 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 09:00"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 10:00, 10:30 - 12:00, 12:30 - 14:30, 15:00 - 16:00, 17:00 - 18:00\nB's availability: 08:00 - 09:00, 09:30 - 11:30, 13:00 - 13:30, 14:00 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 10:00 - 10:30, 11:30 - 12:00, 12:30 - 14:30, 15:00 - 16:00, 16:30 - 17:00, 17:30 - 18:00\nB's availability: 09:30 - 10:00, 10:30 - 11:00, 13:00 - 13:30, 14:00 - 14:30, 15:00 - 15:30, 16:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 09:00 - 13:00, 13:30 - 15:30, 16:30 - 17:00, 17:30 - 18:00\nB's availability: 08:30 - 09:00, 09:30 - 10:00, 12:00 - 13:00, 13:30 - 15:30, 16:00 - 16:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "12:00 - 13:00"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:30 - 10:00, 11:30 - 12:00, 12:30 - 13:00, 13:30 - 14:00\nB's availability: 08:00 - 08:30, 09:00 - 09:30, 10:30 - 11:00, 12:00 - 12:30, 13:30 - 14:00, 15:30 - 16:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 09:00, 11:00 - 12:00, 13:30 - 14:00, 15:30 - 16:00, 17:30 - 18:00\nB's availability: 08:00 - 08:30, 09:30 - 11:00, 11:30 - 12:00, 12:30 - 13:00, 16:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 10:30, 11:00 - 13:30, 14:00 - 14:30, 15:00 - 15:30\nB's availability: 09:00 - 09:30, 10:30 - 11:00, 12:00 - 12:30, 14:00 - 14:30, 15:00 - 15:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 09:00, 11:30 - 12:00, 13:30 - 14:00, 16:30 - 17:00, 17:30 - 18:00\nB's availability: 08:00 - 09:00, 09:30 - 10:30, 14:30 - 15:00, 15:30 - 16:00, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 12:30 - 13:00, 14:00 - 15:30, 17:00 - 18:00\nB's availability: 08:30 - 12:00, 12:30 - 13:00, 13:30 - 15:30, 16:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "14:00 - 15:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 09:00 - 11:00, 12:00 - 12:30, 13:30 - 14:00, 14:30 - 15:30\nB's availability: 08:30 - 09:00, 09:30 - 10:00, 10:30 - 11:30, 12:30 - 13:00, 13:30 - 14:30, 16:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 09:00, 10:30 - 12:00, 15:30 - 16:00, 17:30 - 18:00\nB's availability: 11:00 - 11:30, 13:00 - 14:00, 14:30 - 15:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "11:00 - 11:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 09:30, 10:00 - 11:00, 12:30 - 14:00, 14:30 - 17:00\nB's availability: 08:30 - 09:30, 10:00 - 11:00, 11:30 - 12:30, 13:00 - 14:30, 16:00 - 16:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 09:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 09:00, 09:30 - 10:00, 11:00 - 12:30, 13:30 - 14:00, 15:00 - 15:30, 16:00 - 18:00\nB's availability: 08:00 - 09:00, 09:30 - 10:00, 10:30 - 13:00, 13:30 - 14:30, 15:00 - 15:30, 16:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "11:00 - 12:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 09:00 - 10:30, 11:00 - 14:30, 15:00 - 15:30, 16:00 - 16:30, 17:00 - 18:00\nB's availability: 08:30 - 09:00, 09:30 - 11:30, 12:30 - 14:30, 16:00 - 16:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:30 - 10:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 10:30, 12:30 - 13:00, 13:30 - 15:00, 16:30 - 18:00\nB's availability: 08:00 - 09:00, 10:00 - 13:00, 13:30 - 14:00, 14:30 - 15:00, 15:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 09:00, 09:30 - 10:00, 11:00 - 11:30, 13:30 - 14:30, 16:30 - 17:30\nB's availability: 08:00 - 09:00, 11:30 - 12:30, 13:30 - 14:00, 15:30 - 16:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 09:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:30 - 10:00, 12:00 - 13:30, 15:00 - 15:30, 16:00 - 16:30, 17:30 - 18:00\nB's availability: 08:30 - 11:00, 12:00 - 13:30, 14:00 - 15:30, 16:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "12:00 - 13:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 09:30 - 10:00, 12:30 - 13:00, 13:30 - 15:30\nB's availability: 08:00 - 08:30, 12:00 - 12:30, 13:30 - 14:00, 14:30 - 15:00, 16:00 - 16:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 09:00 - 09:30, 11:00 - 12:00, 12:30 - 13:00, 15:30 - 17:00, 17:30 - 18:00\nB's availability: 09:00 - 09:30, 10:00 - 10:30, 11:00 - 12:00, 12:30 - 14:00, 14:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "11:00 - 12:00"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 09:00, 09:30 - 10:30, 11:00 - 12:00, 12:30 - 13:00, 14:30 - 15:30, 16:30 - 17:30\nB's availability: 08:00 - 08:30, 09:00 - 09:30, 11:30 - 12:30, 13:00 - 15:00, 16:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 09:00, 09:30 - 10:30, 13:00 - 13:30, 14:00 - 14:30, 15:30 - 16:00, 16:30 - 17:00, 17:30 - 18:00\nB's availability: 09:00 - 09:30, 10:00 - 10:30, 11:30 - 14:30, 15:30 - 16:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 09:30, 10:00 - 10:30, 11:30 - 12:00, 15:00 - 15:30\nB's availability: 08:00 - 10:30, 11:00 - 11:30, 12:00 - 12:30, 13:00 - 14:30, 15:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 09:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 09:00 - 09:30, 10:00 - 13:00, 13:30 - 14:00, 14:30 - 15:00, 15:30 - 16:00, 16:30 - 18:00\nB's availability: 08:00 - 09:00, 10:00 - 11:30, 12:00 - 12:30, 13:00 - 13:30, 14:30 - 15:30, 16:00 - 16:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:00 - 11:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 09:30, 10:00 - 15:00, 15:30 - 16:00, 17:30 - 18:00\nB's availability: 08:30 - 09:00, 11:00 - 11:30, 12:30 - 13:30, 14:30 - 15:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 09:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 08:30, 10:00 - 10:30, 11:30 - 13:00, 14:00 - 14:30, 15:30 - 16:00, 16:30 - 18:00\nB's availability: 08:00 - 10:30, 11:00 - 12:30, 13:00 - 13:30, 14:00 - 14:30, 15:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 11:00 - 11:30, 13:30 - 14:00, 16:00 - 18:00\nB's availability: 08:30 - 09:00, 10:30 - 11:00, 12:00 - 13:00, 13:30 - 14:00, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "13:30 - 14:00"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 09:00, 09:30 - 10:00, 10:30 - 11:00, 14:30 - 15:00, 15:30 - 16:00\nB's availability: 08:00 - 11:00, 11:30 - 14:00, 14:30 - 15:30, 16:30 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 09:00, 13:00 - 13:30, 14:30 - 15:00, 16:30 - 17:30\nB's availability: 09:00 - 10:30, 11:00 - 11:30, 12:00 - 12:30, 13:00 - 14:00, 14:30 - 15:30, 16:00 - 16:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "13:00 - 13:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 13:00, 14:00 - 15:00, 16:00 - 16:30, 17:30 - 18:00\nB's availability: 08:00 - 08:30, 13:00 - 13:30, 16:00 - 16:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 12:00 - 14:00, 15:00 - 15:30, 16:00 - 16:30\nB's availability: 08:00 - 10:30, 11:00 - 12:30, 13:30 - 15:30, 16:30 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "12:00 - 12:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 09:30, 10:00 - 11:00, 11:30 - 12:30, 13:00 - 13:30, 14:00 - 17:00, 17:30 - 18:00\nB's availability: 08:00 - 08:30, 12:00 - 12:30, 14:00 - 14:30, 16:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 10:30, 11:00 - 12:00, 12:30 - 14:30, 15:00 - 16:30, 17:00 - 18:00\nB's availability: 12:30 - 13:00, 13:30 - 15:30, 16:00 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "12:30 - 13:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 10:30, 11:00 - 11:30, 12:00 - 13:00, 14:00 - 14:30, 15:30 - 16:00\nB's availability: 08:30 - 09:30, 10:00 - 10:30, 11:30 - 12:30, 13:00 - 13:30, 14:30 - 15:00, 16:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 09:30, 10:00 - 11:00, 11:30 - 12:00, 12:30 - 13:30, 14:00 - 14:30, 15:00 - 16:00, 16:30 - 17:00, 17:30 - 18:00\nB's availability: 08:00 - 08:30, 09:00 - 10:30, 11:00 - 12:00, 13:00 - 14:30, 16:00 - 16:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:00 - 09:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 11:30, 12:00 - 12:30, 13:00 - 13:30, 14:30 - 15:00\nB's availability: 08:00 - 09:00, 09:30 - 11:30, 12:00 - 13:00, 13:30 - 15:00, 15:30 - 16:00, 16:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 09:00"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 12:30, 13:00 - 14:00, 14:30 - 15:00, 16:30 - 18:00\nB's availability: 10:00 - 11:00, 12:00 - 13:00, 14:00 - 15:00, 16:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:00 - 11:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 09:30 - 10:00, 11:30 - 12:00, 13:00 - 14:30, 15:00 - 16:00, 17:30 - 18:00\nB's availability: 08:00 - 09:30, 10:00 - 10:30, 11:00 - 11:30, 12:30 - 15:30, 16:30 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "13:00 - 14:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 09:00, 10:30 - 12:30, 13:30 - 14:00, 16:00 - 17:00, 17:30 - 18:00\nB's availability: 09:00 - 09:30, 10:00 - 11:00, 11:30 - 12:00, 12:30 - 13:30, 14:00 - 15:00, 15:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 09:00 - 09:30, 10:00 - 10:30, 14:00 - 16:00, 17:30 - 18:00\nB's availability: 08:00 - 08:30, 09:00 - 10:00, 13:30 - 14:00, 14:30 - 15:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 09:30 - 10:00, 13:30 - 15:00, 16:00 - 16:30, 17:30 - 18:00\nB's availability: 08:00 - 09:00, 09:30 - 14:00, 14:30 - 15:30, 16:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 08:30, 09:30 - 10:00, 10:30 - 11:00, 14:30 - 15:00, 17:30 - 18:00\nB's availability: 09:30 - 10:00, 13:00 - 13:30, 15:00 - 16:00, 16:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 09:00, 10:30 - 11:00, 12:30 - 13:00, 13:30 - 14:00, 15:00 - 15:30, 16:30 - 17:30\nB's availability: 08:00 - 08:30, 12:00 - 13:00, 14:30 - 15:00, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 09:00, 10:00 - 11:30, 12:30 - 13:00, 15:30 - 16:00, 17:30 - 18:00\nB's availability: 08:00 - 08:30, 10:30 - 11:30, 13:30 - 14:00, 14:30 - 15:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 09:30 - 12:00, 12:30 - 13:00, 14:30 - 15:30, 16:30 - 17:30\nB's availability: 08:00 - 08:30, 12:30 - 13:00, 13:30 - 16:00, 16:30 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "14:30 - 15:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 09:00 - 11:30, 12:30 - 14:00, 14:30 - 16:00, 16:30 - 17:00\nB's availability: 08:00 - 10:00, 10:30 - 11:00, 11:30 - 12:00, 12:30 - 13:00, 13:30 - 15:00, 15:30 - 16:00, 16:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 09:00, 10:30 - 11:30, 12:30 - 14:00, 14:30 - 18:00\nB's availability: 08:00 - 09:30, 10:30 - 11:00, 11:30 - 12:30, 13:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 09:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 09:30, 11:00 - 13:30, 14:00 - 15:00, 15:30 - 18:00\nB's availability: 08:30 - 09:00, 09:30 - 10:00, 10:30 - 11:00, 13:00 - 13:30, 14:00 - 16:00, 16:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 09:00, 10:30 - 11:30, 14:00 - 15:00, 16:00 - 16:30, 17:00 - 17:30\nB's availability: 08:30 - 09:30, 10:00 - 11:30, 12:00 - 13:30, 14:00 - 14:30, 15:00 - 16:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 09:00, 11:30 - 12:00, 13:00 - 15:30, 16:00 - 17:00\nB's availability: 09:00 - 09:30, 10:00 - 10:30, 12:00 - 12:30, 13:00 - 13:30, 14:00 - 14:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 09:00, 11:00 - 12:00, 12:30 - 13:00, 16:00 - 16:30, 17:00 - 18:00\nB's availability: 08:30 - 09:00, 10:30 - 11:30, 12:00 - 12:30, 13:30 - 14:00, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 09:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 08:30, 10:00 - 10:30, 11:00 - 12:00, 12:30 - 14:00, 14:30 - 15:00, 16:00 - 16:30, 17:30 - 18:00\nB's availability: 08:30 - 09:30, 10:00 - 11:00, 12:00 - 12:30, 14:00 - 14:30, 15:00 - 15:30, 16:00 - 16:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 09:30, 11:00 - 12:00, 13:30 - 14:00, 15:30 - 16:00, 16:30 - 17:00\nB's availability: 08:30 - 09:00, 11:00 - 11:30, 12:00 - 12:30, 13:00 - 13:30, 14:00 - 14:30, 15:00 - 15:30, 16:00 - 16:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 10:00, 10:30 - 11:30, 12:00 - 12:30, 13:00 - 15:00, 16:00 - 16:30, 17:00 - 18:00\nB's availability: 08:30 - 11:00, 11:30 - 12:00, 15:00 - 16:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 09:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:30 - 10:30, 11:00 - 11:30, 13:00 - 16:00, 16:30 - 18:00\nB's availability: 08:00 - 09:00, 09:30 - 11:00, 12:30 - 15:30, 16:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 09:30, 11:30 - 12:00, 12:30 - 13:00, 13:30 - 14:30, 15:30 - 16:30, 17:30 - 18:00\nB's availability: 08:00 - 09:00, 12:30 - 13:00, 14:00 - 14:30, 15:30 - 16:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 09:00"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 09:00, 10:00 - 10:30, 11:00 - 11:30, 12:00 - 14:30, 15:00 - 15:30, 16:00 - 17:00, 17:30 - 18:00\nB's availability: 09:00 - 10:00, 12:00 - 12:30, 13:00 - 13:30, 15:00 - 16:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:30 - 10:30, 11:00 - 11:30, 12:00 - 13:30, 14:00 - 15:30, 16:30 - 18:00\nB's availability: 08:00 - 11:30, 13:00 - 14:00, 15:30 - 16:00, 16:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 09:30, 10:30 - 11:00, 11:30 - 12:00, 12:30 - 13:00, 14:00 - 14:30, 15:30 - 16:00, 17:30 - 18:00\nB's availability: 08:00 - 09:00, 11:00 - 11:30, 12:30 - 13:00, 14:00 - 14:30, 15:00 - 15:30, 16:00 - 16:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 10:30, 11:00 - 12:00, 12:30 - 13:30, 14:00 - 14:30, 15:00 - 18:00\nB's availability: 08:00 - 08:30, 09:30 - 10:00, 10:30 - 11:00, 12:30 - 14:00, 14:30 - 16:00, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "12:30 - 13:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 10:00, 10:30 - 11:30, 12:00 - 12:30, 13:00 - 13:30, 14:00 - 16:00, 16:30 - 17:00\nB's availability: 08:00 - 10:30, 11:00 - 11:30, 12:00 - 13:30, 14:00 - 14:30, 15:00 - 16:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 09:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 11:00, 11:30 - 12:30, 13:30 - 14:00, 15:00 - 15:30, 16:00 - 16:30, 17:00 - 18:00\nB's availability: 10:00 - 12:00, 14:30 - 15:30, 16:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:00 - 10:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 09:00, 12:00 - 14:00, 15:00 - 16:00, 17:00 - 18:00\nB's availability: 09:00 - 09:30, 10:00 - 10:30, 11:30 - 12:30, 13:00 - 15:00, 15:30 - 16:00, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 09:00, 10:00 - 11:00, 11:30 - 12:00, 13:30 - 14:30, 15:00 - 17:30\nB's availability: 08:30 - 09:30, 10:00 - 10:30, 11:30 - 12:00, 13:00 - 14:00, 15:00 - 16:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 09:00"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 10:00, 10:30 - 11:30, 12:00 - 14:00, 14:30 - 16:00, 17:00 - 18:00\nB's availability: 08:00 - 09:00, 09:30 - 10:30, 11:00 - 14:00, 14:30 - 16:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 09:00"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 09:00 - 09:30, 10:00 - 10:30, 11:30 - 13:00, 14:00 - 16:30, 17:00 - 18:00\nB's availability: 08:30 - 09:30, 10:00 - 10:30, 12:00 - 12:30, 13:00 - 14:00, 15:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "15:30 - 16:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 09:30 - 10:00, 11:00 - 11:30, 14:00 - 15:00, 16:00 - 16:30, 17:30 - 18:00\nB's availability: 08:00 - 08:30, 09:00 - 09:30, 10:30 - 12:30, 13:30 - 15:00, 15:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "14:00 - 15:00"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 09:30, 10:30 - 11:30, 12:00 - 14:00, 14:30 - 15:00, 15:30 - 16:00, 17:00 - 18:00\nB's availability: 09:00 - 09:30, 10:30 - 11:00, 11:30 - 12:00, 13:00 - 13:30, 15:00 - 15:30, 16:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:00 - 09:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 09:30, 10:30 - 12:30, 13:00 - 13:30, 14:00 - 14:30, 16:00 - 16:30, 17:00 - 18:00\nB's availability: 08:00 - 08:30, 09:00 - 09:30, 10:30 - 11:00, 14:00 - 14:30, 15:00 - 15:30, 16:00 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 08:30, 09:30 - 14:30, 15:00 - 16:00, 16:30 - 17:30\nB's availability: 09:30 - 10:00, 11:00 - 11:30, 13:30 - 14:30, 16:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "13:30 - 14:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 10:00, 12:00 - 12:30, 13:00 - 14:30, 16:30 - 18:00\nB's availability: 08:30 - 09:30, 10:30 - 11:30, 12:30 - 13:30, 14:00 - 14:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 09:30, 10:00 - 11:00, 11:30 - 15:30, 16:30 - 17:30\nB's availability: 08:00 - 10:30, 11:00 - 13:30, 14:30 - 15:30, 16:30 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 09:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 08:30, 10:00 - 11:00, 11:30 - 12:00, 17:00 - 18:00\nB's availability: 08:00 - 08:30, 09:30 - 10:00, 12:00 - 12:30, 14:30 - 16:00, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:30 - 11:00, 12:00 - 13:00, 13:30 - 14:00, 16:30 - 18:00\nB's availability: 08:00 - 08:30, 10:00 - 10:30, 11:30 - 12:30, 13:00 - 15:00, 16:00 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 10:30, 13:00 - 14:00, 14:30 - 15:00, 15:30 - 16:30\nB's availability: 08:00 - 11:00, 11:30 - 12:00, 12:30 - 16:00, 16:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 10:00, 12:30 - 13:30, 14:30 - 15:30, 16:00 - 17:00\nB's availability: 09:30 - 10:00, 10:30 - 11:30, 13:30 - 14:00, 15:30 - 16:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 09:00, 09:30 - 10:00, 11:00 - 11:30, 12:00 - 12:30, 17:30 - 18:00\nB's availability: 08:30 - 09:00, 11:00 - 12:00, 14:00 - 14:30, 15:00 - 15:30, 16:30 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 09:00 - 09:30, 10:30 - 12:00, 13:30 - 14:30, 15:00 - 17:00, 17:30 - 18:00\nB's availability: 09:30 - 10:00, 11:00 - 11:30, 12:00 - 12:30, 13:00 - 14:00, 15:00 - 16:00, 16:30 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "15:00 - 16:00"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 09:00 - 10:30, 16:00 - 16:30, 17:30 - 18:00\nB's availability: 08:30 - 09:30, 10:00 - 10:30, 12:00 - 12:30, 13:00 - 14:00, 14:30 - 15:00, 15:30 - 16:00, 16:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 11:00 - 12:00, 12:30 - 13:30, 14:00 - 14:30, 15:30 - 17:30\nB's availability: 08:00 - 10:30, 12:00 - 15:30, 16:00 - 16:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 09:00, 12:00 - 12:30, 15:30 - 16:00, 16:30 - 17:00, 17:30 - 18:00\nB's availability: 08:00 - 09:00, 10:00 - 11:30, 12:00 - 13:00, 13:30 - 14:00, 14:30 - 15:00, 15:30 - 16:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 09:00"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 10:00, 10:30 - 11:30, 12:00 - 13:30, 14:30 - 15:00, 16:30 - 18:00\nB's availability: 08:30 - 11:00, 11:30 - 12:00, 12:30 - 14:30, 15:00 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 09:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 11:00 - 11:30, 12:00 - 12:30, 13:00 - 13:30, 14:00 - 14:30, 15:30 - 16:00, 16:30 - 17:30\nB's availability: 08:00 - 08:30, 09:30 - 10:00, 10:30 - 11:00, 11:30 - 12:00, 12:30 - 13:00, 14:30 - 15:00, 16:00 - 16:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 09:00, 09:30 - 11:30, 12:00 - 12:30, 13:00 - 15:00, 15:30 - 18:00\nB's availability: 08:00 - 08:30, 09:00 - 09:30, 10:30 - 11:30, 13:00 - 15:00, 16:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "13:00 - 14:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 09:30 - 11:00, 13:00 - 15:30, 16:00 - 16:30\nB's availability: 08:30 - 09:00, 09:30 - 10:00, 11:30 - 12:30, 14:00 - 14:30, 15:00 - 15:30, 16:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 09:00, 10:00 - 10:30, 11:00 - 11:30, 13:30 - 14:00, 15:00 - 15:30, 17:00 - 17:30\nB's availability: 08:30 - 09:00, 11:00 - 11:30, 14:00 - 14:30, 15:30 - 16:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 11:30, 12:00 - 13:30, 14:30 - 15:30, 16:00 - 16:30, 17:00 - 18:00\nB's availability: 08:30 - 11:30, 12:00 - 12:30, 13:30 - 14:30, 15:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 10:00"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 09:00, 10:30 - 12:00, 12:30 - 13:30, 14:00 - 15:30, 16:00 - 17:00, 17:30 - 18:00\nB's availability: 08:00 - 09:00, 09:30 - 14:00, 15:30 - 16:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:30 - 09:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 11:30 - 13:00, 14:00 - 14:30, 15:00 - 15:30\nB's availability: 08:00 - 09:30, 10:00 - 11:30, 12:00 - 12:30, 15:30 - 16:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 10:00 - 10:30, 12:30 - 13:00, 14:00 - 14:30, 15:30 - 16:30\nB's availability: 11:30 - 12:00, 12:30 - 13:00, 13:30 - 14:00, 15:00 - 15:30, 16:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "12:30 - 13:00"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:30 - 11:00, 11:30 - 12:30, 14:00 - 15:00, 15:30 - 16:30, 17:00 - 17:30\nB's availability: 09:00 - 09:30, 10:30 - 11:30, 13:00 - 14:00, 15:00 - 16:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:30 - 11:00"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 08:30, 11:00 - 11:30, 12:30 - 13:00, 14:30 - 15:30\nB's availability: 08:00 - 09:00, 10:30 - 12:30, 13:00 - 14:00, 15:00 - 15:30, 16:00 - 16:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 09:00, 10:30 - 11:00, 11:30 - 12:00, 13:00 - 13:30, 14:30 - 15:00, 16:30 - 18:00\nB's availability: 08:00 - 09:00, 09:30 - 11:00, 11:30 - 12:00, 12:30 - 15:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 09:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 09:00, 09:30 - 10:30, 11:30 - 12:00, 12:30 - 16:30, 17:00 - 17:30\nB's availability: 08:00 - 09:30, 10:30 - 11:00, 11:30 - 12:00, 12:30 - 14:00, 14:30 - 15:30, 16:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "12:30 - 14:00"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 10:00 - 11:30, 14:00 - 15:30, 16:00 - 16:30\nB's availability: 08:30 - 10:30, 11:00 - 11:30, 12:00 - 12:30, 13:00 - 13:30, 15:00 - 15:30, 16:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:00 - 10:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 10:00 - 10:30, 11:30 - 12:30, 13:00 - 13:30, 14:00 - 14:30, 17:00 - 18:00\nB's availability: 09:00 - 09:30, 10:30 - 11:00, 13:00 - 14:30, 15:30 - 16:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 09:00, 10:30 - 11:30, 12:00 - 12:30, 13:00 - 13:30, 14:00 - 16:00, 17:30 - 18:00\nB's availability: 08:00 - 09:00, 10:00 - 11:00, 12:00 - 12:30, 13:30 - 15:00, 16:00 - 16:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 09:00, 09:30 - 10:00, 14:00 - 14:30, 15:30 - 18:00\nB's availability: 08:00 - 08:30, 09:30 - 10:30, 11:00 - 11:30, 12:00 - 12:30, 13:00 - 13:30, 14:30 - 16:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 09:30 - 10:00, 11:30 - 13:00, 14:00 - 14:30, 15:00 - 15:30\nB's availability: 10:00 - 10:30, 11:30 - 12:30, 13:30 - 14:30, 15:30 - 16:00, 16:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "11:30 - 12:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 09:30, 10:00 - 13:00, 14:00 - 15:00, 16:00 - 17:00, 17:30 - 18:00\nB's availability: 09:00 - 09:30, 10:30 - 11:30, 12:00 - 12:30, 14:00 - 14:30, 15:00 - 15:30, 16:30 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 09:00 - 09:30, 10:30 - 11:00, 11:30 - 12:00, 15:30 - 16:00, 16:30 - 17:00\nB's availability: 09:00 - 10:30, 11:30 - 12:00, 12:30 - 15:00, 16:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 11:00, 11:30 - 14:30, 15:00 - 15:30, 16:00 - 17:00, 17:30 - 18:00\nB's availability: 08:00 - 09:00, 09:30 - 10:30, 12:30 - 13:00, 14:30 - 15:00, 16:00 - 16:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:30 - 10:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 09:30, 11:30 - 12:00, 15:00 - 15:30, 16:00 - 16:30, 17:00 - 17:30\nB's availability: 08:00 - 08:30, 09:30 - 10:00, 11:00 - 11:30, 12:30 - 13:00, 13:30 - 14:00, 14:30 - 15:00, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 09:00, 09:30 - 10:30, 11:00 - 11:30, 13:00 - 13:30, 14:30 - 15:00, 15:30 - 17:00, 17:30 - 18:00\nB's availability: 08:00 - 08:30, 10:00 - 10:30, 11:00 - 11:30, 12:30 - 13:00, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 09:00 - 09:30, 10:00 - 12:00, 13:00 - 15:00, 17:30 - 18:00\nB's availability: 08:00 - 09:00, 14:00 - 14:30, 16:30 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "14:00 - 14:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 09:30, 10:00 - 10:30, 12:00 - 13:00, 13:30 - 14:00, 15:30 - 17:30\nB's availability: 09:00 - 09:30, 10:00 - 11:30, 15:00 - 15:30, 16:00 - 16:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 09:00 - 10:30, 12:00 - 14:00, 14:30 - 15:00, 15:30 - 17:00\nB's availability: 08:30 - 09:00, 10:00 - 10:30, 11:00 - 11:30, 12:00 - 13:00, 13:30 - 15:00, 16:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:00 - 10:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 09:00, 09:30 - 10:00, 10:30 - 15:00, 16:30 - 18:00\nB's availability: 08:00 - 08:30, 10:00 - 11:00, 11:30 - 12:00, 12:30 - 13:00, 16:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 09:00, 10:00 - 10:30, 13:00 - 14:00, 17:30 - 18:00\nB's availability: 09:00 - 11:30, 12:30 - 13:00, 13:30 - 14:00, 15:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 09:00, 10:00 - 11:00, 11:30 - 12:30, 13:00 - 13:30, 14:00 - 17:00\nB's availability: 09:00 - 12:30, 13:00 - 14:30, 15:00 - 15:30, 16:00 - 16:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 10:00 - 12:00, 13:00 - 13:30, 14:30 - 16:30\nB's availability: 09:00 - 09:30, 10:30 - 11:00, 11:30 - 13:00, 14:00 - 14:30, 15:00 - 16:00, 16:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:30 - 11:00"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 15:30\nB's availability: 08:00 - 08:30, 09:30 - 11:30, 12:30 - 13:30, 14:00 - 14:30, 16:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:30 - 10:00"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:30 - 10:00, 12:00 - 12:30, 13:00 - 13:30, 16:00 - 16:30, 17:00 - 17:30\nB's availability: 08:00 - 09:00, 09:30 - 10:30, 14:00 - 15:00, 15:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 08:30, 12:30 - 13:00, 14:00 - 15:00, 15:30 - 16:00, 17:00 - 18:00\nB's availability: 08:30 - 09:30, 11:00 - 11:30, 13:00 - 13:30, 14:30 - 16:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 10:00, 11:30 - 14:00, 14:30 - 16:00, 16:30 - 18:00\nB's availability: 08:00 - 09:00, 12:30 - 13:00, 16:00 - 16:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 10:30, 13:00 - 13:30, 14:00 - 17:00, 17:30 - 18:00\nB's availability: 08:00 - 09:00, 09:30 - 10:00, 10:30 - 12:30, 13:30 - 14:00, 16:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 09:30, 12:30 - 13:00, 13:30 - 14:00, 16:00 - 16:30, 17:00 - 17:30\nB's availability: 08:30 - 09:00, 09:30 - 11:30, 13:00 - 14:30, 15:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 10:30, 11:00 - 11:30, 12:00 - 13:00, 13:30 - 15:30, 16:00 - 16:30, 17:30 - 18:00\nB's availability: 09:00 - 10:00, 10:30 - 11:30, 12:00 - 12:30, 13:00 - 13:30, 14:30 - 15:30, 16:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:00 - 10:00"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 10:00, 10:30 - 11:30, 12:30 - 13:00, 14:00 - 14:30, 15:00 - 15:30, 16:30 - 18:00\nB's availability: 08:00 - 08:30, 09:00 - 10:30, 11:00 - 14:00, 15:00 - 15:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 09:00, 09:30 - 12:00, 12:30 - 15:00, 16:00 - 17:00\nB's availability: 08:00 - 08:30, 09:30 - 10:30, 11:30 - 12:00, 13:00 - 13:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:30 - 10:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:30 - 09:00, 12:30 - 13:00, 13:30 - 14:00, 14:30 - 15:30, 16:00 - 16:30\nB's availability: 08:00 - 11:30, 12:00 - 13:00, 14:30 - 15:00, 16:00 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 09:00 - 09:30, 13:30 - 15:00, 16:00 - 17:00\nB's availability: 08:30 - 09:00, 11:00 - 12:00, 13:00 - 16:00, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "13:30 - 14:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 11:30, 13:00 - 13:30, 14:00 - 15:30, 16:00 - 16:30, 17:00 - 18:00\nB's availability: 08:30 - 09:00, 11:30 - 12:00, 12:30 - 14:00, 14:30 - 15:00, 15:30 - 16:00, 16:30 - 17:00, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 08:30, 11:30 - 12:00, 13:30 - 14:00, 16:00 - 16:30, 17:30 - 18:00\nB's availability: 08:30 - 09:30, 10:00 - 10:30, 11:00 - 14:00, 15:00 - 16:00, 16:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:30 - 11:30, 12:00 - 14:30, 15:00 - 15:30, 16:00 - 16:30, 17:30 - 18:00\nB's availability: 08:30 - 09:30, 11:30 - 12:00, 13:30 - 14:00, 14:30 - 15:30, 16:00 - 16:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "13:30 - 14:00"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 13:00, 14:00 - 16:00, 16:30 - 17:00, 17:30 - 18:00\nB's availability: 08:30 - 09:00, 09:30 - 11:30, 12:00 - 13:00, 13:30 - 14:00, 14:30 - 16:00, 16:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:30 - 10:00"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:30 - 09:00, 09:30 - 11:30, 12:00 - 12:30, 13:30 - 15:00, 16:00 - 17:30\nB's availability: 08:00 - 08:30, 09:00 - 09:30, 10:00 - 10:30, 11:00 - 12:00, 12:30 - 13:00, 13:30 - 14:00, 14:30 - 15:30, 17:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "10:00 - 10:30"
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 08:00 - 08:30, 09:00 - 09:30, 10:00 - 10:30, 11:30 - 12:00, 12:30 - 13:00, 13:30 - 14:30, 15:00 - 15:30, 16:00 - 18:00\nB's availability: 08:00 - 08:30, 09:00 - 10:00, 10:30 - 12:00, 12:30 - 14:30, 15:00 - 17:30\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "08:00 - 08:30"
+        },
+        {
+            "input": "A and B want to schedule a 1-hour meeting together.\nA's availability: 08:00 - 08:30, 13:30 - 14:30, 15:00 - 15:30, 16:00 - 16:30, 17:00 - 17:30\nB's availability: 08:00 - 08:30, 10:00 - 10:30, 12:30 - 13:00, 13:30 - 16:00, 16:30 - 17:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "13:30 - 14:30"
+        },
+        {
+            "input": "A and B want to schedule a 1.5-hour meeting together.\nA's availability: 08:30 - 09:00, 09:30 - 10:30, 11:00 - 12:00, 12:30 - 13:00, 15:00 - 16:30, 17:00 - 17:30\nB's availability: 08:00 - 08:30, 09:00 - 09:30, 10:30 - 12:00, 12:30 - 13:30, 14:00 - 14:30, 16:00 - 16:30, 17:30 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "No time slot works."
+        },
+        {
+            "input": "A and B want to schedule a 0.5-hour meeting together.\nA's availability: 09:00 - 09:30, 10:00 - 11:00, 12:00 - 12:30, 13:30 - 14:00, 15:00 - 16:30, 17:30 - 18:00\nB's availability: 08:00 - 08:30, 09:00 - 10:30, 11:00 - 11:30, 13:00 - 13:30, 15:00 - 15:30, 16:00 - 16:30, 17:00 - 18:00\nWhat time slot works best? (if multiple, choose the earliest one",
+            "target": "09:00 - 09:30"
+        }
+    ]
+}
