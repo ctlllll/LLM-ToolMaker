@@ -1,4 +1,6 @@
 # Large Language Models as Tool Makers
+*Tianle Cai, Xuezhi Wang, Tengyu Ma, Xinyun Chen, Denny Zhou*
+
 [Paper link](https://arxiv.org/abs/2305.17126)
 
 ## Motivation
