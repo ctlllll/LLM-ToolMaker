@@ -1,4 +1,5 @@
 # Large Language Models as Tool Makers
+[Paper link](https://arxiv.org/abs/2305.17126)
 
 ## Motivation
 Recent research shows the potential of enhancing the problem-solving ability of
@@ -69,3 +70,13 @@ generating function calls to utilize the tool for each task instance.
 - tooluser.ipynb -- notebook for testing Tool User and Dispatcher
 - bbh folder -- the tasks from BigBench in json format
 - cot-prompts folder -- the Chain-of-Thought prompts
+
+## Citation
+```
+@article{cai2023large,
+  title   = {Large Language Models as Tool Makers},
+  author  = {Tianle Cai and Xuezhi Wang and Tengyu Ma and Xinyun Chen and Denny Zhou},
+  year    = {2023},
+  journal = {arXiv preprint arXiv: 2305.17126}
+}
+```
